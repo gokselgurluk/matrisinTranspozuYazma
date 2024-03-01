@@ -2,16 +2,6 @@ import java.util.Arrays;
 
 public class Main {
 
-
-    public static void matrisTranspozu(int[][] matris) {
-
-        for (int i = 0; i < matris[0].length; i++) {
-            for (int j = 0; j < matris.length; j++) {
-                System.out.print(matris[j][i] + "\t");
-            }
-            System.out.println();
-        }
-    }
     public static void main(String[] args) {
         int[][] matris = {
                 {2, 3, 4},
@@ -23,9 +13,15 @@ public class Main {
             }
             System.out.println();
         }
-
         System.out.println("Matris Transpozu:");
-        matrisTranspozu(matris);
+        for (int i = 0; i < matris[0].length; i++) {
+            for (int j = 0; j < matris.length; j++) {
+                System.out.print(matris[j][i] + "\t");
+            }
+            System.out.println();
+        }
+
+
 
     }
 }
